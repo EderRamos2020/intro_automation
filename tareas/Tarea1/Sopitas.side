@@ -1,0 +1,102 @@
+{
+  "id": "6383cecc-c7b2-4fa2-b87e-fd4ef97b452d",
+  "version": "2.0",
+  "name": "Sopitas",
+  "url": "https://www.sopitas.com",
+  "tests": [{
+    "id": "4a71073c-0ebf-4a0b-a7e7-1a9f65fb834b",
+    "name": "verificacion del home page",
+    "commands": [{
+      "id": "1fc5c072-965d-4074-9f6d-81fb9bbe89fd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e00bc501-00df-413a-9ee2-e4b7a7ba3b1f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "846x658",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0ddc207-0357-4e47-b469-f589b580e39d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=s",
+      "targets": [
+        ["id=s-desktop", "id"],
+        ["name=s", "name"],
+        ["css=#s-desktop", "css:finder"],
+        ["xpath=//input[@id='s-desktop']", "xpath:attributes"],
+        ["xpath=//header[@id='top']/nav/div/div/div[3]/ul/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54efeab1-028d-4a4e-afc7-8d42bd6c47be",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.menu .fa",
+      "targets": [
+        ["css=.menu .fa", "css:finder"],
+        ["xpath=//header[@id='top']/nav/div/div/div[3]/ul/form/div/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de377a8d-5e4d-4e19-920e-daf94054187b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Sopitas.com",
+      "targets": [
+        ["linkText=Sopitas.com", "linkText"],
+        ["css=h1 > .logo-sopitas", "css:finder"],
+        ["xpath=//a[contains(text(),'Sopitas.com')]", "xpath:link"],
+        ["xpath=//header[@id='top']/nav/div/div/div[2]/h1/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.sopitas.com')]", "xpath:href"],
+        ["xpath=//h1/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sopitas.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b59a793b-feb3-4ca1-9c2e-783c4f1a22f2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-1 > h5",
+      "targets": [
+        ["css=.col-1 > h5", "css:finder"],
+        ["xpath=//section[@id='trending']/div/div/div/h5", "xpath:idRelative"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Tendencias')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad68cea3-7f26-43f1-8ab4-c93a91bdba13",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Lady Tacos de Canasta",
+      "targets": [
+        ["linkText=Lady Tacos de Canasta", "linkText"],
+        ["css=.olreset > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Lady Tacos de Canasta')]", "xpath:link"],
+        ["xpath=//section[@id='trending']/div/div/div[2]/ol/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.sopitas.com/?s=Lady+Tacos+de+Canasta&utm_source=sopitas&utm_medium=trends&utm_campaign=terms-bar')]", "xpath:href"],
+        ["xpath=//ol/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lady Tacos de Canasta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a9f87b5a-7555-47c2-ad8d-9a00b766f0c7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4a71073c-0ebf-4a0b-a7e7-1a9f65fb834b"]
+  }],
+  "urls": ["https://www.sopitas.com/"],
+  "plugins": []
+}
